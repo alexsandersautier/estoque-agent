@@ -1,6 +1,6 @@
 import os
 import streamlit as st
-from decouple import config
+# from decouple import config
 from langchain.prompts import PromptTemplate
 from langchain import hub
 from langchain.agents import create_react_agent, AgentExecutor
@@ -8,7 +8,10 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_community.utilities.sql_database import SQLDatabase
 from langchain_community.agent_toolkits.sql.toolkit import SQLDatabaseToolkit
 
-os.environ["GOOGLE_API_KEY"] = config("GOOGLE_API_KEY")
+# try:
+#     os.environ["GOOGLE_API_KEY"] = config("GOOGLE_API_KEY")
+# except:
+os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
 
 st.set_page_config(
     page_title='Stock IA',
