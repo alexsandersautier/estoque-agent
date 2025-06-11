@@ -61,7 +61,8 @@ agent = create_react_agent(
 agent_executor = AgentExecutor(
     agent=agent,
     tools=toolkit.get_tools(),
-    verbose=True
+    verbose=True,
+    handle_parsing_errors=True
 )
 
 prompt = '''
