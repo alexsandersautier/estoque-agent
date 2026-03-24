@@ -14,7 +14,7 @@ from langchain.chains import RetrievalQA
 import tempfile
 
 # Configuração da chave de API
-os.environ["GOOGLE_API_KEY"] = 'AIzaSyDKonQ82CwyLupZW7qmaZh6Le3mUjqTSyY'#st.secrets["GOOGLE_API_KEY"]
+os.environ["GOOGLE_API_KEY"] = 'AIzaSyAD37RNob17phhOJP2QcIG6NPC-Jxc1frw'#st.secrets["GOOGLE_API_KEY"]
 
 st.set_page_config(page_title='IA', page_icon='🤖')
 st.header('Assistente virtual')
